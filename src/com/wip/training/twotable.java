@@ -1,3 +1,5 @@
+//print 2 multiplication table
+
 package com.wip.training;
 
 public class twotable {

@@ -1,3 +1,4 @@
+//prints sum of first 100 numbers
 package com.wip.training;
 
 public class sumof100 {
