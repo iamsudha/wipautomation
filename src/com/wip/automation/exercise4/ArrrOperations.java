@@ -14,6 +14,7 @@ public class ArrrOperations {
     MinmaxArray(arr);
     PrintReverseArray(arr);
     arr = ReverseArrayinPlace(arr);
+    
 
   }
 
