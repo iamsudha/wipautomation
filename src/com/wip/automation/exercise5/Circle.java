@@ -6,20 +6,21 @@ public class Circle {
   // returns the area of a cirle
 
   public Circle(int rad) {
+    radius = rad;
+    System.out.println("print radius " + radius);
     count++;
-
   }
-
-  static void areaofCircle() {
-    double area = 3.14 * Circle.radius * Circle.radius;
-    System.out.println(area);
+//returns area of a circle
+  double areaofCircle() {
+    System.out.println("print radius " + radius);
+    double area = 3.14 * radius * radius;
+    return area;
   }
 
   // returns the perimeter of a circle
-
-  static void perimeterofCircle() {
-    double perimeter = 2 * 3.14 * Circle.radius;
-    System.out.println(perimeter);
+  double perimeterofCircle() {
+    double perimeter = 2 * 3.14 * radius;
+    return perimeter;
 
   }
 }

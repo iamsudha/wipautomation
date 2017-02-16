@@ -24,10 +24,14 @@ public class Main {
     int sqr = calc.squareofNumber(9);
     System.out.println(sqr);
 
-    Circle cir = new Circle(5);
+    Circle cir = new Circle(7);
     System.out.println(Circle.count);
-
-
+    double area = cir.areaofCircle();
+    int rad = Circle.radius;
+    System.out.println("radius:" + rad);
+    System.out.println("area=" + area);
+    double perimeter = cir.perimeterofCircle();
+    System.out.println("perimeter=" + perimeter);
 
   }
 
