@@ -1,7 +1,7 @@
 package com.wip.automation.exercise5;
 
 public class Circle {
-  public static int radius;
+  int radius;
   public static int count = 0;
   // returns the area of a cirle
 
