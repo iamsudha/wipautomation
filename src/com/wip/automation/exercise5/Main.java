@@ -9,22 +9,25 @@ public class Main {
     int sum = calc.sumofIntegers(10, 20);
     System.out.println(sum);
 
-    int prod = calc.prodofIntegers(40,50);
+    int prod = calc.prodofIntegers(40, 50);
     System.out.println(prod);
-    
-    int sub = calc.subtractionofIntegers(90,50);
+
+    int sub = calc.subtractionofIntegers(90, 50);
     System.out.println(sub);
 
-    int mod = calc.modofIntegers(66,8);
+    int mod = calc.modofIntegers(66, 8);
     System.out.println(mod);
-    
-    int div=calc.divisionofIntegers(66,8);
+
+    int div = calc.divisionofIntegers(66, 8);
     System.out.println(div);
-    
+
     int sqr = calc.squareofNumber(9);
     System.out.println(sqr);
 
-   
+    Circle cir = new Circle(5);
+    System.out.println(Circle.count);
+
+
 
   }
 
