@@ -27,7 +27,7 @@ public class Main {
     Circle cir = new Circle(7);
     System.out.println(Circle.count);
     double area = cir.areaofCircle();
-    int rad = Circle.radius;
+    int rad = cir.radius;
     System.out.println("radius:" + rad);
     System.out.println("area=" + area);
     double perimeter = cir.perimeterofCircle();
