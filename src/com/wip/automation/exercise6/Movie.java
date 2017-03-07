@@ -30,6 +30,13 @@ public class Movie {
   public int movieLength() {
     return movielength;
   }
+  
+  
+  @Override
+  public String toString() {
+    // TODO Auto-generated method stub
+    return title + "released on" + releasedate;
+  }
 
   public void printMovieDetails() {
     System.out.println(title);

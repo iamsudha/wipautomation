@@ -1,6 +1,8 @@
 package com.wip.training;
 
-//package com.lang.firefox;
+import java.util.concurrent.TimeUnit;
+
+// package com.lang.firefox;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,30 +20,21 @@ public class firefox2 {
     WebDriver driver = new FirefoxDriver();
     driver.get("http://www.github.com");
     driver.manage().window().maximize();
-    String  var1=driver.getTitle();
-    System.out.println(var1);
-    
-    String currurl=driver.getCurrentUrl();
-    System.out.println(currurl);
-    
-    String pgsrc=driver.getPageSource();
-    //System.out.println(pgsrc);
-    
-    //findElement, then pass by strategy, webelement instance linkElement;
-    
+
+
     WebElement linkElement = driver.findElement(By.linkText("Sign in"));
     linkElement.click();
-    //linkElement.getTagName();
-    //WebElement linkElement2 = driver.findElement(By.className("alt-h1"));
-   // linkElement2.getText();
-  WebElement linkElement3 = driver.findElement(By.className("form"));
-     linkElement3.sendKeys("iamsudha");
-   /* WebElement email = driver.findElement(By.id("login"));
-    Actions builder = new Actions(driver);
-    Actions seriesOfActions = builder.moveToElement(email).click().sendKeys(email, "gati.naveen@gmail.com");
-    seriesOfActions.perform();*/
+    driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+
     
-    //driver.close();
+    WebElement userName = driver.findElement(By.id("login_field"));
+    userName.sendKeys("iamsudha");
+    WebElement password = driver.findElement(By.id("password"));
+    password.sendKeys("shr1ya02");
+    WebElement linkElement1 = driver.findElement(By.className("btn"));
+    linkElement1.click();
+    driver.close();
+     
   }
 
 }

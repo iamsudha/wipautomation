@@ -12,8 +12,8 @@ kitty.scream();
 
 Kitten kit = new Kitten();
 //default class from different package (kitten is from dif package)cannot be inherited 
-//but classes from same package , cat can be done
-kit.scream();
+//but classes from same package , cat can be done,for example
+//kit.scream();
   }
 
 }

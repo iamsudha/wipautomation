@@ -10,8 +10,9 @@ public class Main {
 
     // String[] mov = new String[5];
     // int totallength=0;
+    //Movie mov=new Movie()
 
-
+//Movie mov = new Movie();
     Calendar cal1 = Calendar.getInstance();
     cal1.set(2002, Calendar.FEBRUARY, 10);
     Date moviedate1 = cal1.getTime();
@@ -35,10 +36,9 @@ public class Main {
     mov[3] = new Movie("Lion King", "Family", moviedate4, 100);
     mov[4] = new Movie("Moana", "Family", moviedate5, 120);
 
-
-
     for (int i = 0; i < mov.length; i++) {
       mov[i].printMovieDetails();
+      System.out.println(mov[0].toString());
     }
     
     int totallength = getTotalLength(mov);
@@ -103,6 +103,8 @@ public class Main {
       }
      return count;
    }
+    
+ 
   
 }//end class Main
   
