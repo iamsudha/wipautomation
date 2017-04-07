@@ -1,11 +1,11 @@
 package com.wip.training.inheritance;
-public class Animal {
 
+public class Animal {
   protected void walking() {
     System.out.println("Walking");
   }
 
-  void scream() {
+  public void scream() {
     System.out.println("scream");
   }
 
